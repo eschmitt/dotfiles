@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/ericschmitt/projects/fpjs101/exercises/compose'
-let g:netrw_dirhist_2='/Users/ericschmitt/Downloads/gist276317-2004381f47908b970fc5436892b85d737c9a04a2'
-let g:netrw_dirhist_3='/Users/ericschmitt/projects/PreludeJS'
-let g:netrw_dirhist_4='/Users/ericschmitt/projects/FunctionalJS'
-let g:netrw_dirhist_5='/Users/ericschmitt/projects/PreludeJS/specs'
-let g:netrw_dirhist_6='/Users/ericschmitt/projects/fpjs101/exercises/first_class'
