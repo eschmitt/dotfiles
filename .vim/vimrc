@@ -1,0 +1,98 @@
+" .vimrc
+
+" load up pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
+" don't need to be compatible with old vim
+set nocompatible
+
+" show line numbers
+set nu
+
+" show row and column in footer
+set ruler
+
+" minimum lines above/below cursor
+set scrolloff=2
+
+" disable code folding
+set nofoldenable
+
+" set colorscheme
+"colorscheme vividchalk
+set background=dark
+
+" toggle spellcheck with <F5>
+:map <F5> :setlocal spell! spelllang=en_au<cr>
+:imap <F5> <ESC>:setlocal spell! spelllang=en_au<cr>
+
+" show syntax highlighting
+syntax on
+filetype plugin indent on
+"au BufNewFile,BufRead *.json set filetype=json foldmethod=syntax
+"au BufNewFile,BufRead *.mu set filetype=html
+"au BufNewFile,BufRead *.less set filetype=css
+au BufNewFile,BufRead *.styl set filetype=css
+
+" set auto indent
+set autoindent
+
+" set indent to (n) spaces and expand
+set ts=2
+set shiftwidth=2
+set expandtab
+set softtabstop=2
+
+" show bracket matches
+set showmatch
+
+" ignore case in search
+set ignorecase
+
+" pay attention to case when caps are used
+set smartcase
+
+" show search results as I type
+set incsearch
+
+" enable mouse support
+set mouse=a
+
+" remove toolbar and scrollbars from macvim
+"set guioptions-=T
+"set guioptions-=L
+"set guioptions-=r
+
+" enable visual bell (disable audio bell)
+set vb
+
+" highlight long lines
+set colorcolumn=80
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.*/
+
+" LaTeX options
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor="latex"
+
+" NERDTree settings
+let g:NERDTreeMapOpenVSplit="v"
+let g:NERDTreeMapOpenSplit="s"
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" Syntastic options
+let g:syntastic_auto_loc_list=1
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+"let g:syntastic_quiet_warnings=1
+
+" Sparkup config
+augroup sparkup_types
+  autocmd!
+  autocmd FileType mustache,handlebars,hbs,php runtime! ftplugin/html/sparkup.vim
+augroup END

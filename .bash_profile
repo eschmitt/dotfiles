@@ -1,9 +1,13 @@
+# Add aliases
 alias ll='ls -al'
 alias gonster='cd ~/projects/gonster/Resources'
 alias specs='jasmine-node . --coffee specs'
 alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
+
+# Add symlinks for nested dot-files
+ln -s ~/.vim/vimrc ~/.vimrc
 
 # MacPorts Installer addition on 2011-08-18_at_02:17:50: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
@@ -12,7 +16,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # location of node binary
 export PATH=$HOME/local/bin:$PATH
 
-# configure display of command prompt
 export PS1="[\u@\h \w]$ "
 
 # {{{
