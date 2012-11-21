@@ -1,0 +1,13 @@
+[user]
+	name = Eric Schmitt
+	email = ericschmitt1@gmail.com
+[alias]
+  d = diff
+  ds = diff --staged
+  l = log
+  s = status -s -b
+  c = commit -v
+  co = checkout
+  a = add -u
+  aa = add -A
+  ap = add -u -p
