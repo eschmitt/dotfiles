@@ -16,6 +16,9 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # location of node binary
 export PATH=$HOME/local/bin:$PATH
 
+# location of cabal/haskell/snap binaries
+export PATH=$HOME/.cabal/bin:$PATH
+
 export PS1="[\u@\h \w]$ "
 
 # {{{
