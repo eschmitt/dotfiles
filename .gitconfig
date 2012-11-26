@@ -8,6 +8,7 @@
   s = status -s -b
   c = commit -v
   co = checkout
+  bam = branch --merged origin/master
   a = add -u
   aa = add -A
   ap = add -u -p
