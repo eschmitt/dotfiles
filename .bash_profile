@@ -1,6 +1,21 @@
 # Add aliases
 alias ll='ls -al'
+
+# Add project aliases
+alias projects='cd ~/projects'
+alias gamestop='cd ~/projects/gamestop-international/Resources'
 alias gonster='cd ~/projects/gonster/Resources'
+alias moocho='cd ~/projects/moocho/Resources'
+alias functional='cd ~/projects/FunctionalJS'
+alias prelude='cd ~/projects/PreludeJS'
+alias fp101='cd ~/projects/Fp101AbridgedClass'
+alias dotfiles='cd ~/projects/dot-files'
+alias viewful='cd ~/projects/viewful'
+alias lorraine='cd ~/projects/lorrainemcgrane.com'
+alias practice='cd ~/projects/practice'
+alias practice-js='cd ~/projects/practice/js'
+
+# Add binary aliases
 alias specs='jasmine-node . --coffee specs'
 alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
