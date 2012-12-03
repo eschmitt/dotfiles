@@ -21,8 +21,10 @@ alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
 
-# Add symlinks for nested dot-files
-ln -s ~/.vim/vimrc ~/.vimrc
+# Add symlink for nested vimrc (if not already created)
+if ! [ -L ~/.vimrc ]; then
+  ln -s ~/.vim/vimrc ~/.vimrc
+fi
 
 # MacPorts Installer addition on 2011-08-18_at_02:17:50: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
