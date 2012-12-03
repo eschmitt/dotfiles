@@ -28,8 +28,9 @@ def report(err, result)
     image = "#{path}/warning.png"
   else
     tests = /[0-9]+ tests?/.match(result).to_s;
+    assertions = /[0-9]+ assertions?/.match(result).to_s;
     failures = /[0-9]+ failures?/.match(result).to_s;
-    info = "#{tests}, #{failures}"
+    info = "#{tests}, #{assertions}, #{failures}"
     no_failures = /0 failures/.match(failures)
     image = no_failures ? "#{path}/passed.png" : "#{path}/failed.png"
     title = no_failures ? "Success" : "Failure"
