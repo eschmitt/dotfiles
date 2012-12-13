@@ -36,6 +36,9 @@ export PATH=$HOME/local/bin:$PATH
 # location of haskell binaries installed using cabal
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
+# location of android platform tools
+export PATH=$HOME/projects/android-sdk/platform-tools:$PATH
+
 export PS1="[\u@\h \w]$ "
 
 # {{{
