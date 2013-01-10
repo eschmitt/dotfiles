@@ -113,6 +113,24 @@ watch('controllers/(.*)\.js') do |m|
   end
 end
 
+watch('android/controllers/(.*)\.js') do |m|
+  find_related_spec_files(m[0]).map do |tf|
+    run_spec_file(tf)
+  end
+end
+
+watch('android/windows/(.*)\.js') do |m|
+  find_related_spec_files(m[0]).map do |tf|
+    run_spec_file(tf)
+  end
+end
+
+watch('android/views/(.*)\.js') do |m|
+  find_related_spec_files(m[0]).map do |tf|
+    run_spec_file(tf)
+  end
+end
+
 # --------------------------------------------------
 # Signal Handling
 # --------------------------------------------------
