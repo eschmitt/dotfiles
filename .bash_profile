@@ -60,10 +60,11 @@ function titaniumRun {
 
 function titaniumRunAndroid {
   DROIDX='015DAA2D13035021'
+  ANDROID_SDK=$HOME/projects/android-sdk/
   if [[ -z "$3" ]] ; then
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/2.1.3.GA/android/builder.py install "$1" /opt/android/ ./ "$2" "$DROIDX"
+    python /Library/Application\ Support/Titanium/mobilesdk/osx/2.1.3.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
   else
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" /opt/android/ ./ "$3" "$DROIDX"
+    python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $DROIDX
   fi
 }
 
