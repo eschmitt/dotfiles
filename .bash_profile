@@ -13,6 +13,8 @@ alias practice-js='cd ~/projects/practice/js'
 alias moocho='cd ~/projects/moocho/Resources'
 alias moocho-run='runTiAppIphone 2.1.2.GA'
 alias moocho-build='buildTiAppAndroid 2.1.2.GA Moocho com.moocho.moocho'
+alias weichert='cd ~/projects/weichert/app'
+alias weichert-build='buildTiAppAndroid 3.0.0.GA Weichert com.looprecur.weichert'
 alias gamestop='cd ~/projects/gamestop-international/Resources'
 alias gonster='cd ~/projects/gonster/Resources'
 alias functional='cd ~/projects/FunctionalJS'
@@ -56,7 +58,7 @@ done
 
 function runTiAppIphone {
   if [[ -z "$1" ]] ; then
-    /Library/Application\ Support/Titanium/mobilesdk/osx/2.1.3.GA/titanium.py run --platform=iphone
+    /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.GA/titanium.py run --platform=iphone
   else
     /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/titanium.py run --platform=iphone
   fi
@@ -66,7 +68,7 @@ function buildTiAppAndroid {
   DROIDX='015DAA2D13035021'
   ANDROID_SDK=$HOME/projects/android-sdk/
   if [[ -z "$3" ]] ; then
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/2.1.3.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
+    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
   else
     python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $DROIDX
   fi
