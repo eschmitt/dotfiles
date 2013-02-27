@@ -10,6 +10,9 @@ alias practice='cd ~/projects/practice'
 alias practice-js='cd ~/projects/practice/js'
 
 # loop/recur project aliases
+alias redbumper='cd ~/projects/RedBumper/Resources'
+alias redbumper-run='runTiAppIphone'
+alias redbumper-build='buildTiAppAndroid RedBumper com.redbumper.dealerapp'
 alias moocho='cd ~/projects/moocho/Resources'
 alias moocho-run='runTiAppIphone 2.1.2.GA'
 alias moocho-build='buildTiAppAndroid 2.1.2.GA Moocho com.moocho.moocho'
@@ -58,7 +61,7 @@ done
 
 function runTiAppIphone {
   if [[ -z "$1" ]] ; then
-    /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.GA/titanium.py run --platform=iphone
+    /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA/titanium.py run --platform=iphone
   else
     /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/titanium.py run --platform=iphone
   fi
@@ -68,7 +71,7 @@ function buildTiAppAndroid {
   DROIDX='015DAA2D13035021'
   ANDROID_SDK=$HOME/projects/android-sdk/
   if [[ -z "$3" ]] ; then
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
+    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.1.0.GA.Continuous/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
   else
     python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $DROIDX
   fi
