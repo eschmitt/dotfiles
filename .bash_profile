@@ -54,6 +54,7 @@ export PS1="[\u@\h \w]$ "
 
 # Android NDK environment variable for native android mobile development
 export ANDROID_NDK=~/projects/android-ndk
+export ANDROID_SDK=~/projects/android-sdk
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
