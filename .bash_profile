@@ -53,7 +53,7 @@ export PATH=$HOME/projects/android-sdk/platform-tools:$PATH
 export PS1="[\u@\h \w]$ "
 
 # Android NDK environment variable for native android mobile development
-export ANDROID_NDK=~/projects/android-ndk-r8d
+export ANDROID_NDK=~/projects/android-ndk
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
