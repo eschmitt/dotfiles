@@ -29,6 +29,8 @@ alias specs='jasmine-node . --coffee specs'
 alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
+alias titanium.py='/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA/titanium.py'
+alias ios_builder='/Library/Applicaiton\ Support/Titanium/mobilesdk/osx/3.0.2.GA/iphone/builder.py'
 
 # Add symlink for nested vimrc (if not already created)
 if ! [ -L ~/.vimrc ]; then
@@ -49,6 +51,9 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 export PATH=$HOME/projects/android-sdk/platform-tools:$PATH
 
 export PS1="[\u@\h \w]$ "
+
+# Android NDK environment variable for native android mobile development
+export ANDROID_NDK=~/projects/android-ndk-r8d
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
