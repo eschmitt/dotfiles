@@ -48,13 +48,13 @@ export PATH=$HOME/local/bin:$PATH
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
 # location of android platform tools
-export PATH=$HOME/projects/android-sdk/platform-tools:$PATH
+export PATH=$HOME/opt/android-sdk/platform-tools:$PATH
 
 export PS1="[\u@\h \w]$ "
 
 # Android NDK environment variable for native android mobile development
-export ANDROID_NDK=~/projects/android-ndk
-export ANDROID_SDK=~/projects/android-sdk
+export ANDROID_NDK=/opt/android-ndk
+export ANDROID_SDK=/opt/android-sdk
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
@@ -75,7 +75,7 @@ function runTiAppIphone {
 
 function buildTiAppAndroid {
   DROIDX='015DAA2D13035021'
-  ANDROID_SDK=$HOME/projects/android-sdk/
+  ANDROID_SDK=$HOME/opt/android-sdk/
   if [[ -z "$3" ]] ; then
     python /Library/Application\ Support/Titanium/mobilesdk/osx/3.1.0.GA.Continuous/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
   else
