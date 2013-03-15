@@ -19,6 +19,10 @@ set scrolloff=2
 " disable code folding
 set nofoldenable
 
+" continuously show filename in footer
+set laststatus=2
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
 " set colorscheme
 "colorscheme vividchalk
 set background=dark
