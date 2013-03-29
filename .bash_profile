@@ -31,6 +31,7 @@ alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
 alias titanium.py='/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA/titanium.py'
 alias ios_builder='/Library/Applicaiton\ Support/Titanium/mobilesdk/osx/3.0.2.GA/iphone/builder.py'
+alias ti='titanium'
 
 # Add symlink for nested vimrc (if not already created)
 if ! [ -L ~/.vimrc ]; then
