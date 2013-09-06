@@ -15,7 +15,8 @@ alias redbumper-run='runTiAppIphone'
 alias redbumper-build='buildTiAppAndroid RedBumper com.redbumper.dealerapp'
 alias moocho='cd ~/projects/moocho/Resources'
 alias moocho-run='runTiAppIphone 2.1.2.GA'
-alias moocho-build='buildTiAppAndroid 2.1.2.GA Moocho com.moocho.moocho'
+#alias moocho-build='buildTiAppAndroid 2.1.2.GA Moocho com.moocho.moocho'
+alias moocho-build='buildTiAppAndroid 3.1.1.GA Moocho com.moocho.moocho'
 alias weichert='cd ~/projects/weichert/Resources'
 alias weichert-build='buildTiAppAndroid 3.0.0.GA Weichert com.looprecur.weichert'
 alias gamestop='cd ~/projects/gamestop-international/Resources'
@@ -48,8 +49,9 @@ export PATH=$HOME/local/bin:$PATH
 # location of haskell binaries installed using cabal
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
-# location of android platform tools
-export PATH=$HOME/opt/android-sdk/platform-tools:$PATH
+# location of android tools
+export PATH=/opt/android-sdk/platform-tools:$PATH
+export PATH=/opt/android-sdk/tools:$PATH
 
 export PS1="[\u@\h \w]$ "
 
