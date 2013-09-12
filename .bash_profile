@@ -80,7 +80,7 @@ function buildTiAppAndroid {
   DROIDX='015DAA2D13035021'
   ANDROID_SDK=/opt/android-sdk/
   if [[ -z "$3" ]] ; then
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.1.0.GA.Continuous/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
+    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
   else
     python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $DROIDX
   fi
