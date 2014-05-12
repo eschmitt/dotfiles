@@ -4,26 +4,9 @@ alias ll='ls -al'
 # My project aliases
 alias projects='cd ~/projects'
 alias dotfiles='cd ~/projects/dotfiles'
-alias viewful='cd ~/projects/viewful'
 alias lorraine='cd ~/projects/lorrainemcgrane.com'
 alias practice='cd ~/projects/practice'
 alias practice-js='cd ~/projects/practice/js'
-
-# loop/recur project aliases
-alias redbumper='cd ~/projects/RedBumper/Resources'
-alias redbumper-run='runTiAppIphone'
-alias redbumper-build='buildTiAppAndroid RedBumper com.redbumper.dealerapp'
-alias moocho='cd ~/projects/moocho/Resources'
-alias moocho-run='runTiAppIphone 2.1.2.GA'
-#alias moocho-build='buildTiAppAndroid 2.1.2.GA Moocho com.moocho.moocho'
-alias moocho-build='buildTiAppAndroid 3.1.1.GA Moocho com.moocho.moocho'
-alias weichert='cd ~/projects/weichert/Resources'
-alias weichert-build='buildTiAppAndroid 3.0.0.GA Weichert com.looprecur.weichert'
-alias gamestop='cd ~/projects/gamestop-international/Resources'
-alias gonster='cd ~/projects/gonster/Resources'
-alias functional='cd ~/projects/FunctionalJS'
-alias prelude='cd ~/projects/PreludeJS'
-alias fp101='cd ~/projects/Fp101AbridgedClass'
 
 # Binary aliases
 alias specs='jasmine-node . --coffee specs'
@@ -70,19 +53,20 @@ done
 
 function runTiAppIphone {
   if [[ -z "$1" ]] ; then
-    /Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA/titanium.py run --platform=iphone
+    $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.1.3.GA/titanium.py run --platform=iphone
   else
-    /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/titanium.py run --platform=iphone
+    $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/titanium.py run --platform=iphone
   fi
 }
 
 function buildTiAppAndroid {
   DROIDX='015DAA2D13035021'
+  S3='ed8e6a6e'
   ANDROID_SDK=/opt/android-sdk/
   if [[ -z "$3" ]] ; then
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $DROIDX
+    python $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $S3
   else
-    python /Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $DROIDX
+    python $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $S3
   fi
 }
 
