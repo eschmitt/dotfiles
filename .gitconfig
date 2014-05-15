@@ -12,3 +12,5 @@
   a = add -u
   aa = add -A
   ap = add -u -p
+[github]
+	user = eschmitt
