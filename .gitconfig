@@ -1,6 +1,10 @@
 [user]
 	name = Eric Schmitt
 	email = ericschmitt1@gmail.com
+[github]
+	user = eschmitt
+[core]
+	editor = vim -f
 [alias]
   d = diff
   ds = diff --staged
@@ -9,8 +13,7 @@
   c = commit -v
   co = checkout
   bam = branch --merged origin/master
-  a = add -u
+  a = add -v
+  au = add -u
   aa = add -A
   ap = add -u -p
-[github]
-	user = eschmitt
