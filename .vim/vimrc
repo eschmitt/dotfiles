@@ -89,11 +89,6 @@ set incsearch
 " enable mouse support
 set mouse=a
 
-" remove toolbar and scrollbars from macvim
-"set guioptions-=T
-"set guioptions-=L
-"set guioptions-=r
-
 " enable visual bell (disable audio bell)
 set vb
 
@@ -102,20 +97,26 @@ set colorcolumn=80
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.*/
 
-" LaTeX options
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor="latex"
+" set leader key to comma
+let mapleader = ","
 
-" NERDTree settings
+" ctrlp config
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_max_height = 30
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_match_window_reversed = 0
+
+" gist.vim config
+let g:gist_open_browser_after_post = 1
+
+" NERDTree config
 let g:NERDTreeMapOpenVSplit="v"
 let g:NERDTreeMapOpenSplit="s"
 
-" Syntastic settings
+" Syntastic config
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-" Syntastic options
 let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
