@@ -12,6 +12,7 @@ TBD
 
 ## TODO
 
+* Fix script/setup.vim, vim can't open it to read.
 * Symlink watchr dir
 * Add update script to work as follows:
 
