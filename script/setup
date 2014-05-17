@@ -1,0 +1,31 @@
+#!/bin/bash
+dotfilesDir=`pwd`
+
+notDotfiles="setup setup.vim update update.vim README.md"
+
+#ln command
+ln="ln -nfs"
+
+#install Vundle
+if [[ ! -d ~/.vim/bundle/vundle ]]; then
+  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
+  
+#setup tmpdir for vim
+mkdir -p ~/.tmp
+  
+#symlink all dotfiles
+for dotfile in ${dotfilesDir}/*; do
+  dotfileName=$(basename $dotfile)
+  [[ $notDotfiles =~ $dotfileName ]] && continue;
+  $ln "${dotfile}" ~/.${dotfileName}
+done
+
+touch ~/.bashrc_local
+
+if [[ ! -d ~/.bash_profile ]]; then
+  echo "source ~/.bashrc" >> ~/.bash_profile
+fi
+
+# run vim setup
+vim -s 'setup.vim'

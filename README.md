@@ -1,14 +1,14 @@
 ## Install
 
 ```bash
-$ cd ~
-$ git clone git@github.com:eschmitt/dotfiles.git .
-$ ./setup
+$ git clone git@github.com:eschmitt/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
+$ script/setup
 ```
 
 ## Update 
 
 ```bash
-$ cd ~
-$ ./update
+$ cd ~/.dotfiles
+$ script/update
 ```
