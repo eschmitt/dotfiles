@@ -1,31 +1,18 @@
 #!/bin/bash
-dotfilesDir=`pwd`
-
-noSymlink="README.md gitignore-global"
 
 #ln command
 ln="ln -nfs"
+
+$ln ~/.dotfiles/bash_profile ~/.bash_profile
+$ln ~/.dotfiles/vimrc ~/.vimrc
+$ln ~/.dotfiles/gitconfig ~/.gitconfig
+git config --global core.excludesfile ~/.dotfiles/gitignore-global
+source ~/.bash_profile
 
 #install Vundle
 if [[ ! -d ~/.vim/bundle/vundle ]]; then
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 fi
-  
-#setup tmpdir for vim
-mkdir -p ~/.tmp
-  
-#symlink all dotfiles
-for dotfile in ${dotfilesDir}/*; do
-  dotfileName=$(basename $dotfile)
-  [[ $noSymlink =~ $dotfileName ]] && continue;
-  $ln "${dotfile}" ~/.${dotfileName}
-done
-
-touch ~/.bashrc_local
-
-if [[ ! -d ~/.bash_profile ]]; then
-  echo "source ~/.bashrc" >> ~/.bash_profile
-fi
 
 # run vim setup
-vim -s 'setup.vim'
+vim -s '~/.dotfiles/script/setup.vim'

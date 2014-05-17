@@ -5,6 +5,7 @@
   user = eschmitt
 [core]
   editor = vim -f
+	excludesfile = /Users/ericschmitt/.dotfiles/gitignore-global
 [alias]
   d = diff
   ds = diff --staged

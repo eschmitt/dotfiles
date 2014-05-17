@@ -19,11 +19,6 @@ alias titanium.py='/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA
 alias ios_builder='/Library/Applicaiton\ Support/Titanium/mobilesdk/osx/3.0.2.GA/iphone/builder.py'
 alias ti='titanium'
 
-# Add symlink for nested vimrc (if not already created)
-if ! [ -L ~/.vimrc ]; then
-  ln -s ~/.vim/vimrc ~/.vimrc
-fi
-
 # MacPorts Installer addition on 2011-08-18_at_02:17:50: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
