@@ -17,7 +17,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
 Plugin 'Townk/vim-autoclose'
 Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist.vim'
+Plugin 'mattn/gist-vim'
 Plugin 'kien/ctrlp.vim'
 "Plugin 'rking/ag.vim'   "requires silver searcher to be installed
 Plugin 'scrooloose/nerdtree'
