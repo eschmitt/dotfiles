@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Aliases
 alias ll='ls -al'
 
