@@ -1,10 +1,10 @@
 [user]
-	name = Eric Schmitt
-	email = ericschmitt1@gmail.com
+  name = Eric Schmitt
+  email = ericschmitt1@gmail.com
 [github]
-	user = eschmitt
+  user = eschmitt
 [core]
-	editor = vim -f
+  editor = vim -f
 [alias]
   d = diff
   ds = diff --staged
