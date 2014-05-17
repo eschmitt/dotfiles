@@ -19,4 +19,4 @@ $ script/update
 
 ## TODO
 
-* Refactor setup and update scripts
+* Fix setup and update scripts
