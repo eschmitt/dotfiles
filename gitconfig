@@ -12,6 +12,7 @@
   d = diff
   ds = diff --staged
   l = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  la = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   s = status -s -b
   c = commit -v
