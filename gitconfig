@@ -11,15 +11,21 @@
 [alias]
   d = diff
   ds = diff --staged
-  l = log
+  l = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   s = status -s -b
   c = commit -v
+  st = status
+  ci = commit
   co = checkout
+  br = branch
   bam = branch --merged origin/master
   a = add -v
   au = add -u
   aa = add -A
   ap = add -u -p
+  type = cat-file -t
+  dump = cat-file -p
 [color]
   diff = auto
   status = auto
