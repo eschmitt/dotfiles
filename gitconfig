@@ -8,6 +8,9 @@
 	excludesfile = /Users/ericschmitt/.dotfiles/gitignore-global
 	autocrlf = input
 	safecrlf = true
+[merge]
+  summary = true
+  log = true
 [alias]
   d = diff
   ds = diff --staged
