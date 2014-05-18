@@ -6,6 +6,8 @@
 [core]
   editor = vim -f
 	excludesfile = /Users/ericschmitt/.dotfiles/gitignore-global
+	autocrlf = input
+	safecrlf = true
 [alias]
   d = diff
   ds = diff --staged
