@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# use vim key bindings
+set -o vi
+
 # Aliases
 alias ll='ls -al'
 
