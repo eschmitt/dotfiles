@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'wavded/vim-stylus'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Floobits/floobits-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required for vundle
