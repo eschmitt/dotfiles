@@ -9,7 +9,7 @@ alias ll='ls -al'
 # My project aliases
 alias projects='cd ~/projects'
 alias dotfiles='cd ~/.dotfiles'
-alias lorraine='cd ~/projects/lorrainemcgrane.com'
+alias lorraine='cd ~/projects/lorrainemcgrane'
 alias practice='cd ~/projects/practice'
 alias practice-js='cd ~/projects/practice/js'
 

@@ -1,6 +1,7 @@
 *.swp
 node_modules
 npm-debug.log
+*.floo
 
 # OS generated files #
 ######################
