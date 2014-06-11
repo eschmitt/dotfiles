@@ -2,6 +2,9 @@
 node_modules
 npm-debug.log
 *.floo
+*.flooignore
+*.sublime-project
+*.sublime-workspace
 
 # OS generated files #
 ######################
