@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'wavded/vim-stylus'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'elzr/vim-json'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Floobits/floobits-vim'
 
