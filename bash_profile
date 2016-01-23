@@ -30,15 +30,6 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 
 export PS1="[\u@\h \w]$ "
 
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
-
 function runTiAppIphone {
   if [[ -z "$1" ]] ; then
     $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.1.3.GA/titanium.py run --platform=iphone
