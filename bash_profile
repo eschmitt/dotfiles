@@ -24,6 +24,7 @@ export JAVA_HOME=/usr/libexec/java_home
 
 # set android sdk environment variable
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 # nvm (version manager for node.js)
 export NVM_DIR=~/.nvm
@@ -35,3 +36,8 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 # format the command line prompt
 export PS1="[\u@\h \w]$ "
 
+###-tns-completion-start-###
+if [ -f /Users/ericschmitt/.tnsrc ]; then 
+    source /Users/ericschmitt/.tnsrc 
+fi
+###-tns-completion-end-###
