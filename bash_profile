@@ -29,7 +29,3 @@ export PATH=$HOME/Library/Haskell/bin:$PATH
 # format the command line prompt
 export PS1="[\u@\h \w]$ "
 
-function jslRun {
-  jsl -conf ~/jsl.conf
-}
-
