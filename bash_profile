@@ -19,7 +19,7 @@ alias watch-rails='watchr ~/.watchr/rails.rb'
 # location of local binaries
 export PATH=$HOME/local/bin:$PATH
 
-# location of nvm binary (version manager for node.js)
+# nvm (version manager for node.js)
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
