@@ -20,7 +20,10 @@ alias watch-rails='watchr ~/.watchr/rails.rb'
 export PATH=$HOME/local/bin:$PATH
 
 # set java home environment variable
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=/usr/libexec/java_home
+
+# set android sdk environment variable
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # nvm (version manager for node.js)
 export NVM_DIR=~/.nvm
