@@ -15,7 +15,6 @@ alias practice-js='cd ~/projects/practice/js'
 
 # Binary aliases
 alias specs='jasmine-node . --coffee specs'
-alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
 
