@@ -18,7 +18,7 @@ alias specs='jasmine-node . --coffee specs'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
 
-# location of node binary
+# location of local binaries
 export PATH=$HOME/local/bin:$PATH
 
 # location of nvm binary (version manager for node.js)
