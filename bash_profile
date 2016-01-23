@@ -32,15 +32,7 @@ source $(brew --prefix nvm)/nvm.sh
 # location of haskell binaries installed using cabal
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
-# location of android tools
-export PATH=/opt/android-sdk/platform-tools:$PATH
-export PATH=/opt/android-sdk/tools:$PATH
-
 export PS1="[\u@\h \w]$ "
-
-# Android NDK environment variable for native android mobile development
-export ANDROID_NDK=/opt/android-ndk
-export ANDROID_SDK=/opt/android-sdk
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
