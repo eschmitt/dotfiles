@@ -18,9 +18,6 @@ alias specs='jasmine-node . --coffee specs'
 alias watch='watchr ~/.watchr/titanium.rb'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
-alias titanium.py='/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.2.GA/titanium.py'
-alias ios_builder='/Library/Applicaiton\ Support/Titanium/mobilesdk/osx/3.0.2.GA/iphone/builder.py'
-alias ti='titanium'
 
 # location of node binary
 export PATH=$HOME/local/bin:$PATH
