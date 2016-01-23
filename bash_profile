@@ -26,26 +26,8 @@ source $(brew --prefix nvm)/nvm.sh
 # location of haskell binaries installed using cabal
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
+# format the command line prompt
 export PS1="[\u@\h \w]$ "
-
-function runTiAppIphone {
-  if [[ -z "$1" ]] ; then
-    $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.1.3.GA/titanium.py run --platform=iphone
-  else
-    $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/titanium.py run --platform=iphone
-  fi
-}
-
-function buildTiAppAndroid {
-  DROIDX='015DAA2D13035021'
-  S3='ed8e6a6e'
-  ANDROID_SDK=/opt/android-sdk/
-  if [[ -z "$3" ]] ; then
-    python $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py install "$1" $ANDROID_SDK ./ "$2" $S3
-  else
-    python $HOME/Library/Application\ Support/Titanium/mobilesdk/osx/"$1"/android/builder.py install "$2" $ANDROID_SDK ./ "$3" $S3
-  fi
-}
 
 function jslRun {
   jsl -conf ~/jsl.conf
