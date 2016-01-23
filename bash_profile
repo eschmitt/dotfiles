@@ -10,8 +10,6 @@ alias ll='ls -al'
 alias projects='cd ~/projects'
 alias dotfiles='cd ~/.dotfiles'
 alias lorraine='cd ~/projects/lorrainemcgrane'
-alias practice='cd ~/projects/practice'
-alias practice-js='cd ~/projects/practice/js'
 
 # Binary aliases
 alias specs='jasmine-node . --coffee specs'
