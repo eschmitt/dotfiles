@@ -16,6 +16,10 @@ alias specs='jasmine-node . --coffee specs'
 alias watch-node='watchr ~/.watchr/node.rb'
 alias watch-rails='watchr ~/.watchr/rails.rb'
 
+# CLI aliases
+alias eIos='tns run ios --emulator'
+alias eAndroid='tns run android --emulator'
+
 # location of local binaries
 export PATH=$HOME/local/bin:$PATH
 
