@@ -25,6 +25,10 @@ alias ti='titanium'
 # location of node binary
 export PATH=$HOME/local/bin:$PATH
 
+# location of nvm binary (version manager for node.js)
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # location of haskell binaries installed using cabal
 export PATH=$HOME/Library/Haskell/bin:$PATH
 
