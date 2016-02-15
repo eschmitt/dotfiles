@@ -24,7 +24,8 @@ alias eAndroid='tns run android --emulator'
 export PATH=$HOME/local/bin:$PATH
 
 # set java home environment variable
-export JAVA_HOME=/usr/libexec/java_home
+#export JAVA_HOME=/usr/libexec/java_home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_7
 
 # set android sdk environment variable
 export ANDROID_HOME=/usr/local/opt/android-sdk
