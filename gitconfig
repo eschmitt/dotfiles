@@ -6,7 +6,7 @@
 [core]
   editor = vim -f
 	excludesfile = /Users/ericschmitt/.dotfiles/gitignore-global
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 [merge]
   summary = true
