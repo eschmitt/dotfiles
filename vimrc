@@ -146,4 +146,8 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
-let test#javascript#mocha#options = '--compilers js:babel-core/register'
+if filereadable("test/test-helper.js")
+  let test#javascript#mocha#options = '--compilers js:babel-core/register --require ./test/test-helper.js'
+else
+  let test#javascript#mocha#options = '--compilers js:babel-core/register'
+endif
