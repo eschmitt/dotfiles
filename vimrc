@@ -26,7 +26,7 @@ Plugin 'wavded/vim-stylus'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Floobits/floobits-vim'
+Plugin 'janko-m/vim-test'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required for vundle
@@ -138,3 +138,12 @@ augroup sparkup_types
   autocmd!
   autocmd FileType mustache,handlebars,hbs,php runtime! ftplugin/html/sparkup.vim
 augroup END
+
+" vim-test config
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+let test#javascript#mocha#options = '--compilers js:babel-core/register'
