@@ -18,7 +18,7 @@ Plugin 'ervandew/supertab'
 Plugin 'Townk/vim-autoclose'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'rking/ag.vim'   "requires silver searcher to be installed
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -116,6 +116,7 @@ let g:ctrlp_map = '<leader>f'
 let g:ctrlp_max_height = 30
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " gist.vim config
 let g:gist_open_browser_after_post = 1
