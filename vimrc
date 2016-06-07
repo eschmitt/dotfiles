@@ -111,6 +111,9 @@ let mapleader = ","
 " jk is escape
 inoremap jk <esc>
 
+" <leader>w for navigating splits
+nnoremap <leader>w <C-w><C-w>
+
 " ctrlp config
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_max_height = 30
