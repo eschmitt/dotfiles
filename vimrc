@@ -37,10 +37,12 @@ filetype plugin indent on    " required
 " :PluginSearch(!) foo - search (or refresh cache first) for foo
 " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 
+if !has('win32') && !has('win64')
 " Don't write backup file if vim is being called by "crontab -e"
 autocmd BufWrite /private/tmp/crontab.* set nowritebackup
 " Don't write backup file if vim is being called by "chpass"
 autocmd BufWrite /private/etc/pw.* set nowritebackup
+endif
 
 " show line numbers
 set nu
@@ -155,3 +157,4 @@ if filereadable("test/test-helper.js")
 else
   let test#javascript#mocha#options = '--compilers js:babel-core/register'
 endif
+
