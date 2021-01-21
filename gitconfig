@@ -1,6 +1,6 @@
 [user]
   name = Eric Schmitt
-  email = ericschmitt1@gmail.com
+  email = 645839+eschmitt@users.noreply.github.com
 [github]
   user = eschmitt
 [core]
@@ -8,6 +8,7 @@
 	excludesfile = /Users/ericschmitt/.dotfiles/gitignore-global
 	autocrlf = false
 	safecrlf = true
+	exludesfile = /home/eric/.dotfiles/gitignore-global
 [merge]
   summary = true
   log = true
